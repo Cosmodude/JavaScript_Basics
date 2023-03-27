@@ -1,0 +1,6 @@
+
+
+ECMA - standards issuing authority.
+nonprofit standards organization for information and communication systems
+
+There is no one official documentation for JS!
