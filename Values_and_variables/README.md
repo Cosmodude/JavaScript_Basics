@@ -7,10 +7,16 @@
 - Symbol
 - BigInt
 
+# Declaration 
+    let and const 
+    var was depricated
+    variables can change types (turned off in typescript)
+
 ### Only one number type
     No floats, integers etc.
     Number is not infinitely precise
 
-## Operations
+## Operators
     % - modulo
     ** - to the power of
+    typeof 
