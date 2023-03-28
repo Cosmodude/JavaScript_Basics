@@ -19,4 +19,4 @@
 ## Operators
     % - modulo
     ** - to the power of
-    typeof 
+    typeof (used without parentheses "()", since it's an operator)
