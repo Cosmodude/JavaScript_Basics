@@ -15,7 +15,15 @@ console.log(name);
 let sentence = `I can\'t do it ${index} times`
 console.log(sentence);
 let numb = Math.pow(index, Math.round(5 * Math.random()))
-console.log(`number is ${numb}`);
+let s = `number is ${numb}`;
+console.log(s);
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+reverseString("hello");
+console.log(parseFloat(reverseString(s)));
+
+
 
 
 
