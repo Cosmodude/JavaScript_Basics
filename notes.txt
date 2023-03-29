@@ -12,3 +12,5 @@ Use tripple equals!!!
 
 Create HTML template:
     print "!" to the file and press TAB
+
+Every value has an inherent truthiness or falseness(truthy or falsy boolean value) about it 
