@@ -5,3 +5,10 @@ nonprofit standards organization for information and communication systems
 
 There is no one official documentation for JS!
 Camel naming convention.
+
+== - types don't matter (converts values to same type)
+=== - cares about types 
+Use tripple equals!!!
+
+Create HTML template:
+    print "!" to the file and press TAB
