@@ -14,3 +14,9 @@ switch (score) {
         break;
     default: console.log("Bad score");
 }
+
+
+// Ternary operator
+
+score === 2 ? console.log("score") : console.log("Not score");
+// condition ? expressionIfTrue : expressionIfFalse
