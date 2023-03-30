@@ -14,3 +14,9 @@ Create HTML template:
     print "!" to the file and press TAB
 
 Every value has an inherent truthiness or falseness(truthy or falsy boolean value) about it 
+
+Logical operators: (priority)
+    &&  (2)
+    ||  (3)
+    !   (1)
+    operators precedence: ! && ||

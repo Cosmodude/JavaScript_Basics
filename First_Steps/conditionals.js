@@ -1,4 +1,4 @@
-let score = 4;
+let score = "";
 if (score > 4) {
     console.log("You get scholarship");
 }
