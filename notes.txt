@@ -31,3 +31,4 @@ Objects:
     same data refernce system as arrays
     key order doesn't matter
     keys are converted to strings 
+    Assign objects with const!!!

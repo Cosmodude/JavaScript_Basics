@@ -16,3 +16,10 @@ const Vlad = {
 console.log(Vlad.trait)
 console.log(Vlad[trait]) 
 Vlad[trait] = 60;
+const m = {
+    number: 32
+}
+const n = {
+    number: 32
+}
+console.log(n === m);  // checks equality of references
