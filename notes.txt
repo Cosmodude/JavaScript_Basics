@@ -25,3 +25,9 @@ Arrays:
     array stores the reference to data location in memory, that's why const arrays can be changed
     Assign arrays with const!!!
     arrays can be nested (syntax similar to python)
+
+Objects:
+    are analogues of dict in python
+    same data refernce system as arrays
+    key order doesn't matter
+    keys are converted to strings 
