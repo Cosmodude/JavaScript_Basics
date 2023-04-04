@@ -1,5 +1,5 @@
 //alert("Hi");
-function set_number() {
+function set_number() {  // func declaration
     let index = 5;
     let numb = Math.pow(index, Math.round(5 * Math.random()))
     let s = `number is ${numb}`;

@@ -20,3 +20,6 @@
     % - modulo
     ** - to the power of
     typeof (used without parentheses "()", since it's an operator)
+
+## Arrays
+    Arrays are objects with number keys
