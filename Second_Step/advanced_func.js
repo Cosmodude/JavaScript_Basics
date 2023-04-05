@@ -27,7 +27,7 @@ function callNTimes(func, N) {
     }
 }
 
-function cry() {
+function cry() {  // This is a Callback function
     console.log("AAAA");
 }
 
@@ -49,3 +49,5 @@ function makeHasNFT(NFT) {
 }
 
 const hasAxie = makeHasNFT("Axie"); 
+
+setTimeout(hasAxie,5000)  // hasAxie is a callback function
