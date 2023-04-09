@@ -7,7 +7,7 @@ const multiply = function mult(a,b) {
 }
 console.log(multiply(3,7));
 
-function substract(x, y) {
+const  substract = function (x, y) {
     return x - y;
 }
 
