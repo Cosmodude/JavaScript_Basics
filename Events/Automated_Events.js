@@ -12,6 +12,10 @@ const changeColor = function () {  // change color of Header
     h1.style.color = this.style.backgroundColor;
 }
 const h1 = document.querySelector('h1');
+h1.addEventListener('mouseover', function () {
+    console.log(this.innerText);
+}
+)
 const container = document.querySelector('#boxes');
 
 for (let color of colors) {
@@ -21,3 +25,7 @@ for (let color of colors) {
     box.addEventListener('click', changeColor)
     container.appendChild(box);
 };
+
+document.body.addEventListener('keypress', function (e) {
+    console.log(e.key);
+})
