@@ -26,6 +26,22 @@ for (let color of colors) {
     container.appendChild(box);
 };
 
-document.body.addEventListener('keypress', function (e) {
-    console.log(e.key);
+const input = document.querySelector("#username"); 
+
+input.addEventListener("keydown", function (e) {  // any time you press a keyboard
+    console.log(e);
 })
+
+const users = document.querySelector("#items");
+input.addEventListener('keypress', function (e) {  // when you type in symbols
+    console.log(e.key);
+    if (e.key === "Enter") {
+        if (!this.value) { return; };
+        const newUser = this.value;
+        const newItem = document.createElement('li');
+        newItem.innerText = newUser;
+        users.appendChild(newItem);
+        this.value = '';
+    }
+})
+
