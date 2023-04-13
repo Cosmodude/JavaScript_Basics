@@ -13,3 +13,4 @@ const moveX = (element, amount, delay, callback) => {
 moveX(btn, 400, 1000, () => {
     moveX(btn, -200, 1000)  // this is callback
 });
+// Callback hell
