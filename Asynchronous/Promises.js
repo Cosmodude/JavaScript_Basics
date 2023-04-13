@@ -12,15 +12,45 @@ makePromise()
 const fakeRequest = (url) => {
     return new Promise((resolve, reject) => {
         setTimeout( () => {
-            const rand = Math.random();
-            if (rand < 0.3) { reject({ status: 404 }); }
-            else { resolve(); }
+            const pages = {
+                "/users": [
+                    { id: 1, username: "Cosmodude" },
+                    { id: 5, username: "Liya" },
+                ],
+                "/users/Cosmodude": {
+                    revenue: 1e8,
+                },
+                "/about": "Description",
+                "/forbs/100000000": "Cosmodude",
+            };
+    
+            const data = pages[url];
+            if (data)   {
+                resolve({status: 200,data});
+            }
+            else{ reject({ status: 404 }); }
         }, 3000);
     });
 }
-fakeRequest().then(() => {
-    console.log("success!");
-});
-fakeRequest().catch((res) => {
-    console.log(res.status);
-});
+
+fakeRequest("/users")
+// if resolve
+    .then((res) => {
+        const name = res.data[0].username;
+        console.log("Status code", res.status);
+        console.log("Data", res.data);
+        console.log("success!");
+        return fakeRequest(`/users/${name}`)
+    })
+    .then((res) => {
+        const revenue = res.data.revenue;
+        console.log(revenue);
+        return fakeRequest(`/forbs/${revenue}`);
+    })
+    .then((res) => {
+    console.log(res.data);
+    })
+// if reject
+    .catch((response) => {
+    console.log(response.status);
+    });
