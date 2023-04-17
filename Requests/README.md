@@ -6,3 +6,5 @@
 
 ## Fetch
     - Supports Promises
+    - Returns even the 404 or 500 error appears
+    
