@@ -12,14 +12,14 @@ fetch(url + "films/")
         console.log("Fetched films");
         for (let film of data.results) {
             console.log(film.title);
-            let heroURL = film.characters[0];
-            console.log(heroURL);
-            return fetch(heroURL);
         }
+        let heroURL = data.results[0].characters[0];
+        console.log(heroURL);
+        return fetch(heroURL);
     })
     .then((hero) => {
         if (!hero.ok) {
-            throw new Error(`Status code Error ${response.status}`);
+            throw new Error(`Status code Error ${hero.status}`);
         }
         return hero.json();
     })
