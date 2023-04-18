@@ -4,6 +4,8 @@ I followed this bootcamp:
 # Semi-official docs:
     https://developer.mozilla.org/en-US/docs/Web/JavaScript
     
+### Studying goes on the browser side
+
 JS comment has camel naming convention
 
 Arrays are objects with number keys
